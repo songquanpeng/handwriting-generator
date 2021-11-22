@@ -28,16 +28,22 @@ def strokes2img(strokes, weight=3, output_path=None):
     width += 1
     height += 1
 
-    # img = Image.new('RGB', (width, height), (255, 255, 255))
     img = Image.new('RGBA', (width, height), (255, 255, 255, 0))
     drawer = ImageDraw.Draw(img)
     for stroke in strokes:
         stroke = [(x - x_min, y - y_min) for x, y in stroke]
         drawer.line(stroke, (0, 0, 0), width=weight)
-    # img = img.convert('L')
-    # img.show()
     if output_path is not None:
         img.save(output_path)
+    return img
+
+
+def ttf2img(font, char, img_size=50, offset=0, save_path=None):
+    img = Image.new('RGBA', (img_size, img_size), (255, 255, 255, 0))
+    drawer = ImageDraw.Draw(img)
+    drawer.text((offset, offset), char, fill=(0, 0, 0, 255), font=font)
+    if save_path is not None:
+        img.save(save_path)
     return img
 
 
