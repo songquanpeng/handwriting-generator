@@ -19,8 +19,8 @@ def write_paper(paper_img, chars, strokes_dict, x_margin, y_start, x_spacing, y_
             y_offset += 4 * y_spacing
             continue
         elif char in ['，', '。']:
-            x_delta = int(1.5 * x_spacing)
-            y_delta = int(0.5 * y_spacing)
+            x_delta = int(0.3 * 200 * scale)
+            y_delta = int(0.2 * 200 * scale)
         try:
             strokes = strokes_dict[char]
         except KeyError:
@@ -83,14 +83,14 @@ if __name__ == '__main__':
     parser.add_argument('--output_path', type=str, default='results')
     parser.add_argument('--font_data', type=str, required=True)
     parser.add_argument('--spacing_x', type=int, default=10)
-    parser.add_argument('--spacing_y', type=int, default=30)
+    parser.add_argument('--spacing_y', type=int, default=35)
     parser.add_argument('--title', type=str, required=True)
     parser.add_argument('--content', type=str, nargs='+', required=True)
     parser.add_argument('--title_weight', type=int, default=10)
-    parser.add_argument('--content_weight', type=int, default=7)
-    parser.add_argument('--title_scale', type=float, default=0.4)
-    parser.add_argument('--content_scale', type=float, default=0.3)
-    parser.add_argument('--title_margin', type=int, default=60)
+    parser.add_argument('--content_weight', type=int, default=8)
+    parser.add_argument('--title_scale', type=float, default=0.3)
+    parser.add_argument('--content_scale', type=float, default=0.2)
+    parser.add_argument('--title_margin', type=int, default=200)
     parser.add_argument('--content_margin', type=int, default=100)
     parser.add_argument('--title_start_y', type=int, default=100)
     parser.add_argument('--content_start_y', type=int, default=200)
