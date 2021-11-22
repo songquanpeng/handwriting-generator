@@ -67,7 +67,7 @@ def get_char2img(args, font_weight=8):
 
         return char2img_strokes, True
     else:
-        font = ImageFont.truetype(args.tff_path, args.ttf_font_size)
+        font = ImageFont.truetype(args.ttf_path, args.ttf_font_size)
 
         def char2img_ttf(char, font_weight_=None):
             return ttf2img(font, char, img_size=args.ttf_char_img_size, offset=args.ttf_char_offset)
@@ -105,7 +105,7 @@ if __name__ == '__main__':
     parser.add_argument('--paper_ratio', type=float, default=1.414)
     parser.add_argument('--output_path', type=str, default='results')
     parser.add_argument('--pnt_path', type=str)
-    parser.add_argument('--tff_path', type=str, default='./data/ttf/handwriting_font_2.ttf')
+    parser.add_argument('--ttf_path', type=str, default='./data/ttf/handwriting_font_2.ttf')
     parser.add_argument('--spacing_x', type=int, default=10)
     parser.add_argument('--spacing_y', type=int, default=35)
     parser.add_argument('--title', type=str, required=True)
