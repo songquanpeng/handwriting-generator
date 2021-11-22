@@ -8,4 +8,7 @@ python ./main.py \
 ```
 
 ## 演示
-![演示](https://cdn.jsdelivr.net/gh/justsong-lab/images/misc/handwriting_generator.png)
+<p>
+  <img src="https://cdn.jsdelivr.net/gh/justsong-lab/images/misc/handwriting_generator.png" width="49%" />
+  <img src="https://cdn.jsdelivr.net/gh/justsong-lab/images/misc/handwriting_generator_demo2.png" width="49%" /> 
+</p>
