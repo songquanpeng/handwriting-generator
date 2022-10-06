@@ -17,6 +17,6 @@ python ./main.py \
 
 ## 演示
 <p>
-  <img src="https://cdn.jsdelivr.net/gh/justsong-lab/images/misc/handwriting_generator.png" width="49%" />
-  <img src="https://cdn.jsdelivr.net/gh/justsong-lab/images/misc/handwriting_generator_demo2.png" width="49%" /> 
+  <img src="https://user-images.githubusercontent.com/39998050/194205271-4f0fd5de-48ff-4bca-9aa8-99ab0e38ed05.png" width="49%" />
+  <img src="https://user-images.githubusercontent.com/39998050/194205228-6bdb24af-9b66-4e5a-a811-66c725edac1c.png" width="49%" /> 
 </p>
